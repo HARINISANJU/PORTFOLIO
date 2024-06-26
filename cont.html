@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      font-family: 'Times New Roman', Times, serif; /* Changed font to Times New Roman */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .connect {
+      border: 2px solid #4CAF50;
+      list-style-type: none;
+      background-color: #4CAF50;
+      padding: 10px 0;
+      margin: 0; 
+      animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+    }
+    
+    .connect li {
+      display: inline-block;
+      padding-right: 20px;
+    }
+    
+    .connect a {
+      color: white; 
+      text-decoration: none; 
+    }
+    
+    h1 {
+      color: #4CAF50;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      animation: bounceInDown 1s ease-in-out; /* Added bounce-in animation */
+    }
+    
+    .contact-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 5px solid #ddd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      animation: slideInLeft 1s forwards, fadeIn 1s ease-in-out; /* Added slide-in and fade-in animations */
+    }
+    
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    
+    .contact-info h2 {
+      color: #4CAF50;
+      margin-top: 0;
+    }
+    
+    .contact-info p {
+      margin: 5px 0;
+    }
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Keyframes for animations */
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes bounceInDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="connect">
+    <li><a href="resume_portfolio.html">ABOUT ME</a></li>
+    <li><a href="https://drive.google.com/file/d/11UumNFX7pB7YdJhG6l0PHIuMQWmG1aJU/view?usp=sharing" target="_blank">RESUME</a></li>
+    <li><a href="proj.html">PROJECTS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+  
+  <div class="contact-container">
+    <h1>CONTACT ME</h1>
+    
+    <div class="contact-info">
+      <h2>Email</h2>
+      <p><a href="mailto:harinisanjana86@gmail.com">harinisanjana86@gmail.com</a></p>
+    </div>
+    
+    <div class="contact-info">
+      <h2>Phone</h2>
+      <p>+91 9361086223</p>
+    </div>
+    
+    <div class="contact-info">
+      <h2>References</h2>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/harinipalanisamy27/" target="_blank">LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/HARINISANJU" target="_blank">GitHub</a></p>
+    </div>
+  </div>
+</body>
+</html>

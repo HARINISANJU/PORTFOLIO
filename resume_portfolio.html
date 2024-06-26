@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: TimesNewRoman;
+}
+
+.connect {
+  border: 2px solid #4CAF50;
+  list-style-type: none;
+  background-color: #4CAF50;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0; 
+}
+
+.connect li {
+  display: inline-block;
+  padding: 0 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.div {
+  width: 600px;
+  border: 5px solid #ddd;
+  padding: 100px;
+  margin: 20px auto; 
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s forwards;
+}
+
+.div img {
+  width: 30%;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  animation: rotateIn 1s forwards;
+}
+
+h1 {
+  color: #4CAF50;
+  animation: bounceInDown 1s ease-in-out;
+}
+
+p {
+  background-color: #f9f9f9;
+  padding: 15px;
+  animation: fadeInText 1s ease-in-out;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color:red;
+}
+
+hr {
+  border-color: #ddd;
+}
+
+/* Keyframes for animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for specific words */
+@keyframes colorChange {
+  0% {
+    color: #4CAF50; /* Starting color */
+  }
+  50% {
+    color: #660000; /* Mid-animation color */
+  }
+  100% {
+    color: #FF0000; /* Ending color */
+  }
+}
+</style>
+</head>
+<body> 
+<ul class="connect">
+  <li><a href="#" target="_self"><b>ABOUT ME</b></a></li>
+  <li><a href="resume.html"><b>RESUME</b></a></li>
+  <li><a href="proj.html"><b>PROJECTS</b></a></li>
+  <li><a href="cont.html"><b>CONTACT</b></a></li>
+</ul>
+<div class="div">
+  <img src="pic1.jpg" alt="Profile Picture">
+  <h1>HELLO!!</h1>
+  <hr>
+  <h2>I am <span class="animated-word">Harini..</span></h2>
+  <p>An <span class="animated-word">innovative</span> person.</p>
+  <p><b><i>Career Objective:</i></b><br>Looking forward to securing a position in a company where I can <span class="animated-word">utilize my skills, broaden my knowledge, and help the company grow.</span></p>
+</div>
+</body>
+</html>
